@@ -14,8 +14,7 @@ rake db:migrate
 Save the student to the database
 
 `
-me = Student.new
-me.save
+me = Student.create(first_name: "John", last_name: "Rodnall", age: 33)
 `
 
  Using the find/set/save syntax update the student's first name to taco
